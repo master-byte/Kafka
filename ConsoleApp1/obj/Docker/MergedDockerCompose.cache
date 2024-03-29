@@ -1,0 +1,155 @@
+name: dockercompose14880404642062681423
+services:
+  clickhouse:
+    container_name: clickhouse
+    environment:
+      CLICKHOUSE_DB: alfn
+      CLICKHOUSE_PASSWORD: alfn
+      CLICKHOUSE_USER: alfn
+    image: yandex/clickhouse-server
+    networks:
+      mynetwork: null
+    ports:
+      - mode: ingress
+        target: 8123
+        published: "8123"
+        protocol: tcp
+      - mode: ingress
+        target: 9000
+        published: "9000"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: volume
+        source: clickhouse-volume
+        target: /var/lib/clickhouse
+        volume: {}
+      - type: bind
+        source: d:\VirtualMachine\Hyper-V\virtual_disk\docker\TEST_DOCKER\ConsoleApp1
+        target: /var/clickhouse/schema
+        bind:
+          create_host_path: true
+      - type: bind
+        source: D:\VirtualMachine\Hyper-V\virtual_disk\docker\TEST_DOCKER\ConsoleApp1\ConsoleApp1\app
+        target: /app
+        bind:
+          create_host_path: true
+  clickhouse-init:
+    command:
+      - |2
+        echo start execute command
+        while ! clickhouse-client --host clickhouse --user alfn --password alfn -q "SHOW databases;"; do
+            echo waiting for clickhouse up
+            sleep 1
+        done
+        clickhouse-client --host clickhouse --user alfn --password alfn --queries-file /var/clickhouse/schema/init_database.sql
+        tail -f /dev/null
+        echo end execute command
+    depends_on:
+      clickhouse:
+        condition: service_started
+        required: true
+    entrypoint:
+      - /bin/sh
+      - -c
+    image: yandex/clickhouse-server
+    networks:
+      mynetwork: null
+    volumes:
+      - type: bind
+        source: D:\VirtualMachine\Hyper-V\virtual_disk\docker\TEST_DOCKER\ConsoleApp1\clickhouse
+        target: /var/clickhouse
+        bind:
+          create_host_path: true
+  consoleapp1:
+    build:
+      context: D:\VirtualMachine\Hyper-V\virtual_disk\docker\TEST_DOCKER\ConsoleApp1
+      dockerfile: ConsoleApp1/Dockerfile
+    container_name: consoleapp1
+    networks:
+      mynetwork: null
+  consumer:
+    build:
+      context: D:\VirtualMachine\Hyper-V\virtual_disk\docker\TEST_DOCKER\ConsoleApp1
+      dockerfile: Consumer/Dockerfile
+    container_name: consumer
+    depends_on:
+      kafka-ui:
+        condition: service_started
+        required: true
+    networks:
+      mynetwork: null
+  kafka:
+    container_name: kafka
+    depends_on:
+      zookeeper:
+        condition: service_started
+        required: true
+    environment:
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://kafka:9092
+      KAFKA_BROKER_ID: "1"
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://kafka:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: "1"
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    image: confluentinc/cp-kafka:7.5.2
+    networks:
+      mynetwork: null
+    ports:
+      - mode: ingress
+        target: 9092
+        published: "9092"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: d:\VirtualMachine\Hyper-V\virtual_disk\docker\TEST_DOCKER
+        target: /var/lib/kafka
+        bind:
+          create_host_path: true
+  kafka-ui:
+    container_name: kafka-ui
+    depends_on:
+      kafka:
+        condition: service_started
+        required: true
+    environment:
+      DYNAMIC_CONFIG_ENABLED: "true"
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka0:29092
+      KAFKA_CLUSTERS_0_KAFKACONNECT_0_ADDRESS: http://kafka-connect0:8083
+      KAFKA_CLUSTERS_0_KAFKACONNECT_0_NAME: first
+      KAFKA_CLUSTERS_0_METRICS_PORT: "9997"
+      KAFKA_CLUSTERS_0_NAME: local
+      KAFKA_CLUSTERS_0_SCHEMAREGISTRY: http://schemaregistry0:8085
+      KAFKA_CLUSTERS_1_BOOTSTRAPSERVERS: kafka1:29092
+      KAFKA_CLUSTERS_1_METRICS_PORT: "9998"
+      KAFKA_CLUSTERS_1_NAME: secondLocal
+      KAFKA_CLUSTERS_1_SCHEMAREGISTRY: http://schemaregistry1:8085
+    image: provectuslabs/kafka-ui:latest
+    networks:
+      mynetwork: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8080"
+        protocol: tcp
+  zookeeper:
+    container_name: sn-zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: "2181"
+      ZOOKEEPER_TICK_TIME: "2000"
+    image: confluentinc/cp-zookeeper:7.5.2
+    networks:
+      mynetwork: null
+    ports:
+      - mode: ingress
+        target: 2181
+        published: "2181"
+        protocol: tcp
+networks:
+  mynetwork:
+    name: dockercompose14880404642062681423_mynetwork
+    driver: bridge
+volumes:
+  clickhouse-volume:
+    name: dockercompose14880404642062681423_clickhouse-volume

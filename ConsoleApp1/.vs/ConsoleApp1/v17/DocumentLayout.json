@@ -1,0 +1,381 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consoleapp1\\clickhouse\\clickhousehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\clickhouse\\clickhousehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A162E7-67DD-47EC-951D-7ABCC17AC924}|docker-compose.dcproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{87A162E7-67DD-47EC-951D-7ABCC17AC924}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consoleapp1\\app\\init_database.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\app\\init_database.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consoleapp1\\kafka\\topichandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\kafka\\topichandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consoleapp1\\kafka\\kafkaqueuehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\kafka\\kafkaqueuehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consoleapp1\\kafka\\kafkaproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\kafka\\kafkaproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consoleapp1\\numbergenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\numbergenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376E5FC9-3096-4E62-A55F-89A1133355B5}|Consumer\\Consumer.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consumer\\clickhouse\\clickhousehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{376E5FC9-3096-4E62-A55F-89A1133355B5}|Consumer\\Consumer.csproj|solutionrelative:consumer\\clickhouse\\clickhousehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376E5FC9-3096-4E62-A55F-89A1133355B5}|Consumer\\Consumer.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consumer\\kafka\\kafkaconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{376E5FC9-3096-4E62-A55F-89A1133355B5}|Consumer\\Consumer.csproj|solutionrelative:consumer\\kafka\\kafkaconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376E5FC9-3096-4E62-A55F-89A1133355B5}|Consumer\\Consumer.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consumer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{376E5FC9-3096-4E62-A55F-89A1133355B5}|Consumer\\Consumer.csproj|solutionrelative:consumer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376E5FC9-3096-4E62-A55F-89A1133355B5}|Consumer\\Consumer.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consumer\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{376E5FC9-3096-4E62-A55F-89A1133355B5}|Consumer\\Consumer.csproj|solutionrelative:consumer\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consoleapp1\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376E5FC9-3096-4E62-A55F-89A1133355B5}|Consumer\\Consumer.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consumer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{376E5FC9-3096-4E62-A55F-89A1133355B5}|Consumer\\Consumer.csproj|solutionrelative:consumer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consoleapp1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376E5FC9-3096-4E62-A55F-89A1133355B5}|Consumer\\Consumer.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consumer\\message\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{376E5FC9-3096-4E62-A55F-89A1133355B5}|Consumer\\Consumer.csproj|solutionrelative:consumer\\message\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consoleapp1\\message\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\message\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consoleapp1\\appsettings.json||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\appsettings.json||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A162E7-67DD-47EC-951D-7ABCC17AC924}|docker-compose.dcproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{87A162E7-67DD-47EC-951D-7ABCC17AC924}|docker-compose.dcproj|solutionrelative:launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A162E7-67DD-47EC-951D-7ABCC17AC924}|docker-compose.dcproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{87A162E7-67DD-47EC-951D-7ABCC17AC924}|docker-compose.dcproj|solutionrelative:.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|d:\\virtualmachine\\hyper-v\\virtual_disk\\docker\\test_docker\\consoleapp1\\consoleapp1\\app\\init_database.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{FD28CFD8-927F-4412-B464-B53B12518053}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\app\\init_database.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "RelativeToolTip": "ConsoleApp1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T16:53:25.428Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "KafkaQueueHandler.cs",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\Kafka\\KafkaQueueHandler.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Kafka\\KafkaQueueHandler.cs",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\Kafka\\KafkaQueueHandler.cs",
+              "RelativeToolTip": "ConsoleApp1\\Kafka\\KafkaQueueHandler.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwA8AAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T07:36:16.711Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClickHouseHandler.cs",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\ClickHouse\\ClickHouseHandler.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\ClickHouse\\ClickHouseHandler.cs",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\ClickHouse\\ClickHouseHandler.cs",
+              "RelativeToolTip": "ConsoleApp1\\ClickHouse\\ClickHouseHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T16:10:31.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClickhouseHandler.cs",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\Consumer\\ClickHouse\\ClickhouseHandler.cs",
+              "RelativeDocumentMoniker": "Consumer\\ClickHouse\\ClickhouseHandler.cs",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\Consumer\\ClickHouse\\ClickhouseHandler.cs",
+              "RelativeToolTip": "Consumer\\ClickHouse\\ClickhouseHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T21:01:57.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "KafkaConsumer.cs",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\Consumer\\Kafka\\KafkaConsumer.cs",
+              "RelativeDocumentMoniker": "Consumer\\Kafka\\KafkaConsumer.cs",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\Consumer\\Kafka\\KafkaConsumer.cs",
+              "RelativeToolTip": "Consumer\\Kafka\\KafkaConsumer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAcwE8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T20:34:53.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\Consumer\\Program.cs",
+              "RelativeDocumentMoniker": "Consumer\\Program.cs",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\Consumer\\Program.cs",
+              "RelativeToolTip": "Consumer\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T20:34:05.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NumberGenerator.cs",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\NumberGenerator.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\NumberGenerator.cs",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\NumberGenerator.cs",
+              "RelativeToolTip": "ConsoleApp1\\NumberGenerator.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAIwA0AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T17:41:55.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAIsAAABsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-03-24T17:29:22.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "KafkaProducer.cs",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\Kafka\\KafkaProducer.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Kafka\\KafkaProducer.cs",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\Kafka\\KafkaProducer.cs",
+              "RelativeToolTip": "ConsoleApp1\\Kafka\\KafkaProducer.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwCMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T17:51:21.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TopicHandler.cs",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\Kafka\\TopicHandler.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Kafka\\TopicHandler.cs",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\Kafka\\TopicHandler.cs",
+              "RelativeToolTip": "ConsoleApp1\\Kafka\\TopicHandler.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwA0AAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T18:27:48.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "init_database.sql ",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\app\\init_database.sql",
+              "RelativeDocumentMoniker": "ConsoleApp1\\app\\init_database.sql",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\app\\init_database.sql",
+              "RelativeToolTip": "ConsoleApp1\\app\\init_database.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-03-28T18:35:15.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\Consumer\\Dockerfile",
+              "RelativeDocumentMoniker": "Consumer\\Dockerfile",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\Consumer\\Dockerfile",
+              "RelativeToolTip": "Consumer\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-24T20:58:51.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\Dockerfile",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Dockerfile",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\Dockerfile",
+              "RelativeToolTip": "ConsoleApp1\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-26T16:19:48.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\Consumer\\appsettings.json",
+              "RelativeDocumentMoniker": "Consumer\\appsettings.json",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\Consumer\\appsettings.json",
+              "RelativeToolTip": "Consumer\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-29T07:00:11.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\appsettings.json",
+              "RelativeDocumentMoniker": "ConsoleApp1\\appsettings.json",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\appsettings.json",
+              "RelativeToolTip": "ConsoleApp1\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-28T16:17:42.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Message.cs",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\Consumer\\Message\\Message.cs",
+              "RelativeDocumentMoniker": "Consumer\\Message\\Message.cs",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\Consumer\\Message\\Message.cs",
+              "RelativeToolTip": "Consumer\\Message\\Message.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwCAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T13:29:36.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Message.cs",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\Message\\Message.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Message\\Message.cs",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\Message\\Message.cs",
+              "RelativeToolTip": "ConsoleApp1\\Message\\Message.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwCYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T18:48:25.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\appsettings.json",
+              "RelativeDocumentMoniker": "ConsoleApp1\\appsettings.json",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\ConsoleApp1\\appsettings.json",
+              "RelativeToolTip": "ConsoleApp1\\appsettings.json",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-28T16:01:54.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\launchSettings.json",
+              "RelativeDocumentMoniker": "launchSettings.json",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\launchSettings.json",
+              "RelativeToolTip": "launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-28T18:57:02.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Microsoft.VisualStudio.Docker.Compose.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAnwMcAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-03-27T13:12:26.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": ".dockerignore",
+              "DocumentMoniker": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\.dockerignore",
+              "RelativeDocumentMoniker": ".dockerignore",
+              "ToolTip": "D:\\VirtualMachine\\Hyper-V\\virtual_disk\\docker\\TEST_DOCKER\\ConsoleApp1\\.dockerignore",
+              "RelativeToolTip": ".dockerignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-24T17:45:20.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

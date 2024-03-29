@@ -1,0 +1,146 @@
+version: '3.4'
+
+networks:
+  mynetwork:
+    driver: bridge
+
+services:
+  consoleapp1:
+    #image: ${DOCKER_REGISTRY-}consoleapp1:latest
+    container_name: consoleapp1
+    build:
+      context: .
+      dockerfile: ConsoleApp1/Dockerfile
+    networks:
+      - mynetwork
+
+  consumer:
+    #image: ${DOCKER_REGISTRY-}consoleapp1:latest
+    container_name: consumer
+    build:
+      context: .
+      dockerfile: Consumer/Dockerfile
+    depends_on:
+      - kafka-ui
+    networks:
+      - mynetwork
+
+  kafka-ui:
+    container_name: kafka-ui
+    image: provectuslabs/kafka-ui:latest
+    ports:
+      - 8080:8080
+    depends_on:
+      - kafka
+    environment:
+      KAFKA_CLUSTERS_0_NAME: local
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka0:29092
+      KAFKA_CLUSTERS_0_METRICS_PORT: 9997
+      KAFKA_CLUSTERS_0_SCHEMAREGISTRY: http://schemaregistry0:8085
+      KAFKA_CLUSTERS_0_KAFKACONNECT_0_NAME: first
+      KAFKA_CLUSTERS_0_KAFKACONNECT_0_ADDRESS: http://kafka-connect0:8083
+      KAFKA_CLUSTERS_1_NAME: secondLocal
+      KAFKA_CLUSTERS_1_BOOTSTRAPSERVERS: kafka1:29092
+      KAFKA_CLUSTERS_1_METRICS_PORT: 9998
+      KAFKA_CLUSTERS_1_SCHEMAREGISTRY: http://schemaregistry1:8085
+      DYNAMIC_CONFIG_ENABLED: 'true'      
+    networks:
+       - mynetwork
+
+  kafka:
+    # "`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-
+    # An important note about accessing Kafka from clients on other machines: 
+    # -----------------------------------------------------------------------
+    #
+    # The config used here exposes port 9092 for _external_ connections to the broker
+    # i.e. those from _outside_ the docker network. This could be from the host machine
+    # running docker, or maybe further afield if you've got a more complicated setup. 
+    # If the latter is true, you will need to change the value 'localhost' in 
+    # KAFKA_ADVERTISED_LISTENERS to one that is resolvable to the docker host from those 
+    # remote clients
+    #
+    # For connections _internal_ to the docker network, such as from other services
+    # and components, use kafka:29092.
+    #
+    # See https://rmoff.net/2018/08/02/kafka-listeners-explained/ for details
+    # "`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-'"`-._,-
+    #
+    image: confluentinc/cp-kafka:7.5.2
+    depends_on:
+      - zookeeper
+    ports:
+      - 9092:9092
+    container_name: kafka    
+    #build:
+     # context: .
+      #dockerfile: Consumer/Dockerfile
+    environment:       
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://kafka:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT   
+      KAFKA_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://kafka:9092
+    volumes: 
+        - d:\VirtualMachine\Hyper-V\virtual_disk\docker\TEST_DOCKER:/var/lib/kafka/:rw
+    networks:
+      - mynetwork
+ 
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.5.2
+    ports:
+      - 2181:2181
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    container_name: sn-zookeeper
+    networks:
+      - mynetwork
+  
+  clickhouse-init:
+    image: yandex/clickhouse-server
+    volumes:
+      - ./clickhouse:/var/clickhouse
+    depends_on:
+      - clickhouse
+    networks:
+      - mynetwork
+    entrypoint: [ '/bin/sh', '-c' ]
+    command: |
+      "
+      echo start execute command
+      while ! clickhouse-client --host clickhouse --user alfn --password alfn -q \"SHOW databases;\"; do
+          echo waiting for clickhouse up
+          sleep 1
+      done
+
+      clickhouse-client --host clickhouse --user alfn --password alfn --queries-file /var/clickhouse/schema/init_database.sql
+
+      tail -f /dev/null
+      echo end execute command
+      "
+  
+
+  clickhouse:
+    restart: always
+    image: yandex/clickhouse-server
+    environment:
+      # Default user and database will be created using `init-defaults.sh` script
+      CLICKHOUSE_DB: alfn
+      CLICKHOUSE_USER: alfn
+      CLICKHOUSE_PASSWORD: alfn
+    container_name: clickhouse
+    ports:
+      - "8123:8123"
+      - "9000:9000"        
+    volumes:
+      -  "clickhouse-volume:/var/lib/clickhouse/"
+      -   d:\VirtualMachine\Hyper-V\virtual_disk\docker\TEST_DOCKER\ConsoleApp1:/var/clickhouse/schema
+      -   D:\VirtualMachine\Hyper-V\virtual_disk\docker\TEST_DOCKER\ConsoleApp1\ConsoleApp1\app:/home/app:rw
+    networks:
+      - mynetwork
+    #command: ["/bin/bash", "./init_database.sql"]
+
+volumes:
+  clickhouse-volume:
